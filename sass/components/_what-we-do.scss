@@ -1,0 +1,40 @@
+.subtitle {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  & {
+    margin-bottom: 50px;
+  }
+}
+
+.what-we-do__item {
+  position: relative;
+  &__text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 0px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white-color;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  img {
+    display: block;
+  }
+}
+
+.what-we-do__section {
+  padding-top: 0;
+}
+
+.portfolio__overlay {
+  img {
+    display: block;
+  }
+}

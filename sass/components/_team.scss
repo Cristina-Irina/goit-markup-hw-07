@@ -1,0 +1,67 @@
+.team__section {
+  background: $gray-bg-color;
+
+  .team__contact {
+    padding: 30px 0;
+
+    .team__contact__name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.18;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .team__contact__role {
+      font-size: 16px;
+      line-height: 1.18;
+      text-align: center;
+      color: $gray-text-color;
+    }
+
+    .team__social__list {
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 32px;
+      margin-top: 16px;
+    }
+
+    .team__social__item {
+      width: 44px;
+      height: 44px;
+
+      .team__social__icon {
+        margin: 12px 0 0 12px;
+        fill: currentColor;
+      }
+    }
+
+    .team__social__link {
+      display: block;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: $white-color;
+      color: $icon-color;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: $white-color;
+        background-color: $highlight-color;
+      }
+    }
+  }
+
+  .team__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .team__item {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+      0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    background-color: $white-color;
+  }
+}

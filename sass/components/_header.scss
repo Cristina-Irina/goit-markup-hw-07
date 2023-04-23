@@ -1,0 +1,74 @@
+$header-border-color: #ececec;
+$header-text-color: #212121;
+$header-text-color-gray: #757575;
+$header-bg-color: #ffffff;
+$menu-link-color: #212121;
+$menu-link-color-highlight: #2196f3;
+$menu-link-padding: 32px;
+$contact-link-color: #757575;
+$contact-link-padding: 32px;
+$contact-link-icon-margin: 10px;
+$contact-link-icon-color: currentColor;
+$menu-link-border-radius: 2px;
+$menu-link-underline-height: 4px;
+
+.header__section {
+  border-bottom: 1px solid $header-border-color;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  padding: $menu-link-padding 0;
+}
+
+.menu__list__link {
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $menu-link-color;
+  padding-top: $menu-link-padding;
+  padding-bottom: $menu-link-padding;
+}
+
+.menu__list {
+  gap: 50px;
+}
+
+.contact__link {
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  color: $contact-link-color;
+  padding: $contact-link-padding 0;
+}
+
+.contact {
+  margin-left: auto;
+  gap: 40px;
+}
+
+.contact__link__icon {
+  margin-right: $contact-link-icon-margin;
+  fill: $contact-link-icon-color;
+  vertical-align: middle;
+}
+
+.current {
+  color: $menu-link-color-highlight;
+}
+
+.menu__list__link.current::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: $menu-link-underline-height;
+  border-radius: $menu-link-border-radius;
+  bottom: -1px;
+  background-color: $menu-link-color-highlight;
+}

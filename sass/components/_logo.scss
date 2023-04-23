@@ -1,0 +1,21 @@
+.logo {
+  font-family: $logo-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 93px;
+
+  &::before {
+    content: 'Web';
+    color: $highlight-color;
+  }
+}
+
+.header__logo {
+  color: $black-text-color;
+}
+
+.footer__logo {
+  color: $white-color;
+}
